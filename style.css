@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2:400,700&display=swap');
+
+html{
+    box-sizing: border-box;
+    font-family: 'Baloo Thambi 2', cursive;
+    color: rgb(118, 163, 213);
+}
+*, *::before, *:after{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.active{
+    display: block;
+    transition: all 1s ease-in-out;
+}
+
+main{
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 600px;
+    display: none;
+}
+
+.switch-field {
+	display: flex;
+	margin-bottom: 10px;
+    overflow: hidden;
+
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.switch-field label {
+    
+    background-color: #e4e4e4;
+    width: 45%;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+	line-height: 1.7rem;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgb(60, 121, 196);
+	transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: rgb(48, 98, 156);
+    box-shadow: none;
+    color: white;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
+
+form{
+    flex-direction: column;
+    align-items: center;
+}
+
+form select, form input{
+    width: 90%;
+    margin: 8px auto;
+    padding: 22px 18px;
+    border: 1px solid rgb(60, 121, 196);
+    color: rgb(54, 111, 176);
+    font-family: 'Baloo Thambi 2', cursive;
+    border-radius: 5px;
+}
+form input{
+    height: 2rem;
+}
+::placeholder{
+    color: rgb(157, 189, 225);
+}
+
+button{
+    background-color: rgb(68, 135, 211);
+    box-shadow: none;
+    color: white;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	padding: 15 auto;
+   
+    width: 90%;
+    margin: 8px auto;
+    padding: 22px 18px;
+}
+
+button:hover{
+    background-color: rgb(48, 98, 156);    
+}
+
+h1{
+    background-color: rgb(118, 163, 213);
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+h2{
+    background-color: rgb(139, 189, 247);
+    color: white;
+    text-align: center;
+    margin: 0.5em 0;
+}

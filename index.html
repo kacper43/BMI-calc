@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    
+    <main class="active" id="dataForm">
+        <h3>BMI Calculator</h3>
+        <form action="" id="myForm" onsubmit="calculateBMI(); return false;">
+            <input id="height" type="text" placeholder="Height [cm]" name="height">
+            <input id="weight" type="text" placeholder="Weight [kg]" name="weight">
+            <input id="age" type="text" placeholder="Age [years]" name="age">
+            
+            <select id="activity" name="activity">
+                <option value="" disabled selected>Rate your activity</option>
+                <option value="1">Sedentary</option>
+                <option value="2">Lightly active</option>
+                <option value="3">Moderately active</option>
+                <option value="4">Very active</option>
+                <option value="5">Extra active</option>
+            </select>
+            <div class="switch-field">
+                <input type="radio" id="radio-one" name="switch-one" value="1" checked/>
+                <label for="radio-one">Male</label>
+                <input type="radio" id="radio-two" name="switch-one" value="0" />
+                <label for="radio-two">Female</label>
+            </div>
+            <button id="calc">Calculate</button>
+
+        </form>
+
+
+    </main>
+
+    <main class="" id="resultsForm">
+        <h1>Your data</h1>
+        <div class="switch-field" id="res-height">Height: </div>
+        <div class="switch-field" id="res-weight">Weight: </div>
+        <div class="switch-field" id="res-age">Age: </div>
+        <div class="switch-field" id="res-activity">Activity level: </div>
+        <div class="switch-field" id="res-gender">Gender: </div> 
+
+        <h1>Results</h1>
+        <h2 id="BMI">BMI SCORE: </h2>
+        BMI RANGES: <br>
+              <span id="bmi1">< 16.0 | Very severely underweight</span> <br>
+              <span id="bmi2">16.0 - 16.99 | Severely underweight </span><br>
+              <span id="bmi3">17.0 - 18.49 | Underweight </span><br>
+              <span id="bmi4">18.5 - 24.99 | Normal (healthy weight) </span><br>
+              <span id="bmi5">25.0 - 29.99 | Overweight </span><br>
+              <span id="bmi6">30.0 - 34.99 | Obese Class I (Moderately obese) </span><br>
+              <span id="bmi7">35.0 - 39.99 | Obese Class II (Severely obese) </span><br>
+              <span id="bmi8">> 40 | Obese Class III (Very severely obese) </span><br>
+        <h2 id="BMR">BMR (Base Metabolic Rate): </h2>
+        <h2 id="TDEE">TDEE (Total Daily Energy Expenditure): </h2>
+        <span id="tdeeInfo">essa</span>
+        <h2>Macroelements</h2>
+        <span id="proteins">Proteins: </span>
+        <span id="carbs">Carbs: </span>
+        <span id="fats">Fats: </span>
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
